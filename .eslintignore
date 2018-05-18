@@ -1,4 +1,0 @@
-node_modules/**
-build/**
-example/assets/**
-webpack.config*.js
