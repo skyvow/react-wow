@@ -1,0 +1,56 @@
+{
+    /**
+     * 环境定义了预定义的全局变量
+     */
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    /**
+     * 解释器 babel-eslint
+     */
+    "parser": "babel-eslint",
+    /**
+     * 启用 standard 规则
+     */
+    "extends": [
+        "standard",
+        "standard-react"
+    ],
+    /**
+     * "off" 或 0 - 关闭规则
+     * "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出),
+     * "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
+     */
+    "rules": {
+        // 强制使用一致的缩进
+        "indent": [2, 4],
+        // 文件末尾强制换行
+        "eol-last": 2,
+        // 双峰驼命名格式
+        "camelcase": 0,
+        // 数组和对象键值对最后一个逗号，多行模式必须带逗号，单行模式不能带逗号
+        "comma-dangle": [2, "always-multiline"],
+        // 要求使用 let 或 const 而不是 var
+        "no-var": 2,
+        // 要求使用 const 声明那些声明后不再被修改的变量
+        "prefer-const": 2,
+        // 要求使用模板字面量而非字符串连接
+        "prefer-template": 2,
+        // 强制一致地使用函数表达式
+        "func-style": [2, "expression"],
+        // 要求箭头函数的参数使用圆括号
+        "arrow-parens": 2,
+        // 禁止在构造函数中，在调用 super() 之前使用 this 或 super
+        "no-this-before-super": 2,
+        // 强制在大括号中使用一致的空格
+        "object-curly-spacing": [2, "always"],
+        // 要求或禁止对象字面量中方法和属性使用简写语法
+        "object-shorthand": [2, "always"],
+        "react/prop-types": 0,
+        "react/jsx-curly-spacing": [2, "never"],
+        "react/jsx-indent": [0, 4],
+        "react/jsx-indent-props": [0, 4],
+    }
+}
