@@ -87,7 +87,7 @@ class Content extends React.Component {
             <section className='col-md-8 col-md-offset-2 card-wrapper'>
                 <div className='card background-card'>
                     <button type='button' className='btn btn-default btn-refresh' onClick={this.onClick}>Refresh</button>
-                    <h4>Exmaple</h4>
+                    <h4>Example</h4>
                     <hr />
                     <section className='mb-50'>
                         <h5 className='box-title'>Normal</h5>
